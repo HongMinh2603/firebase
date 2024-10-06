@@ -1,0 +1,177 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\Espressif\frameworks\firebase\build\bootloader\esp-idf\esptool_py && D:\Espressif.\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.1.4/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/Espressif/frameworks/firebase/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from D:/Espressif/frameworks/firebase/main/main.c:6:
+D:/Espressif/frameworks/firebase/main/main.c: In function 'wifi_event_handler':
+D:/Espressif/frameworks/firebase/main/main.c:32:50: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   32 |         ESP_LOGI(TAG, "Got IP: %s", ip4addr_ntoa(&event->ip_info.ip));
+      |                                                  ^~~~~~~~~~~~~~~~~~
+      |                                                  |
+      |                                                  esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/Espressif/frameworks/esp-idf-v5.1.4/components/log/include/esp_log.h:410:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.1.4/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/Espressif/frameworks/firebase/main/main.c:32:9: note: in expansion of macro 'ESP_LOGI'
+   32 |         ESP_LOGI(TAG, "Got IP: %s", ip4addr_ntoa(&event->ip_info.ip));
+      |         ^~~~~~~~
+In file included from D:/Espressif/frameworks/esp-idf-v5.1.4/components/lwip/lwip/src/include/lwip/ip_addr.h:43,
+                 from D:/Espressif/frameworks/esp-idf-v5.1.4/components/lwip/lwip/src/include/lwip/sockets.h:46,
+                 from D:/Espressif/frameworks/esp-idf-v5.1.4/components/lwip/include/lwip/sockets.h:8,
+                 from D:/Espressif/frameworks/esp-idf-v5.1.4/components/lwip/port/esp32xx/include/sys/socket.h:15,
+                 from D:/Espressif/frameworks/esp-idf-v5.1.4/components/esp_http_client/include/esp_http_client.h:13,
+                 from D:/Espressif/frameworks/firebase/main/firebase.h:8,
+                 from D:/Espressif/frameworks/firebase/main/main.c:7:
+D:/Espressif/frameworks/esp-idf-v5.1.4/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/Espressif/frameworks/firebase/main/main.c:32:50: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   32 |         ESP_LOGI(TAG, "Got IP: %s", ip4addr_ntoa(&event->ip_info.ip));
+      |                                                  ^~~~~~~~~~~~~~~~~~
+      |                                                  |
+      |                                                  esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/Espressif/frameworks/esp-idf-v5.1.4/components/log/include/esp_log.h:411:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.1.4/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/Espressif/frameworks/firebase/main/main.c:32:9: note: in expansion of macro 'ESP_LOGI'
+   32 |         ESP_LOGI(TAG, "Got IP: %s", ip4addr_ntoa(&event->ip_info.ip));
+      |         ^~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.1.4/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/Espressif/frameworks/firebase/main/main.c:32:50: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   32 |         ESP_LOGI(TAG, "Got IP: %s", ip4addr_ntoa(&event->ip_info.ip));
+      |                                                  ^~~~~~~~~~~~~~~~~~
+      |                                                  |
+      |                                                  esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/Espressif/frameworks/esp-idf-v5.1.4/components/log/include/esp_log.h:412:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  412 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.1.4/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/Espressif/frameworks/firebase/main/main.c:32:9: note: in expansion of macro 'ESP_LOGI'
+   32 |         ESP_LOGI(TAG, "Got IP: %s", ip4addr_ntoa(&event->ip_info.ip));
+      |         ^~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.1.4/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/Espressif/frameworks/firebase/main/main.c:32:50: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   32 |         ESP_LOGI(TAG, "Got IP: %s", ip4addr_ntoa(&event->ip_info.ip));
+      |                                                  ^~~~~~~~~~~~~~~~~~
+      |                                                  |
+      |                                                  esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/Espressif/frameworks/esp-idf-v5.1.4/components/log/include/esp_log.h:413:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  413 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.1.4/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/Espressif/frameworks/firebase/main/main.c:32:9: note: in expansion of macro 'ESP_LOGI'
+   32 |         ESP_LOGI(TAG, "Got IP: %s", ip4addr_ntoa(&event->ip_info.ip));
+      |         ^~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.1.4/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+D:/Espressif/frameworks/firebase/main/main.c:32:50: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+   32 |         ESP_LOGI(TAG, "Got IP: %s", ip4addr_ntoa(&event->ip_info.ip));
+      |                                                  ^~~~~~~~~~~~~~~~~~
+      |                                                  |
+      |                                                  esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+D:/Espressif/frameworks/esp-idf-v5.1.4/components/log/include/esp_log.h:414:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.1.4/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/Espressif/frameworks/firebase/main/main.c:32:9: note: in expansion of macro 'ESP_LOGI'
+   32 |         ESP_LOGI(TAG, "Got IP: %s", ip4addr_ntoa(&event->ip_info.ip));
+      |         ^~~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.1.4/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable firebase.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated D:/Espressif/frameworks/firebase/build/firebase.bin
+[7/8] cmd.exe /C "cd /D D:\Espressif\frameworks\firebase\build\esp-idf\esptool_py && D:\Espressif.\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.1.4/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Espressif/frameworks/firebase/build/partition_table/partition-table.bin D:/Espressif/frameworks/firebase/build/firebase.bin"
+firebase.bin binary size 0xd7ee0 bytes. Smallest app partition is 0x100000 bytes. 0x28120 bytes (16%) free.
+[7/8] cmd.exe /C "cd /D D:\Espressif\frameworks\esp-idf-v5.1.4\components\esptool_py && D:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/Espressif/frameworks/esp-idf-v5.1.4 -D SERIAL_TOOL=D:/Espressif./python_env/idf5.1_py3.11_env/Scripts/python.exe;;D:/Espressif/frameworks/esp-idf-v5.1.4/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/Espressif/frameworks/firebase/build -P D:/Espressif/frameworks/esp-idf-v5.1.4/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 firebase.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM3
+Connecting.................
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 10:06:1c:86:c0:88
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000e7fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16734...
+Writing at 0x00001000... (50 %)
+Writing at 0x000076a0... (100 %)
+Wrote 26720 bytes (16734 compressed) at 0x00001000 in 0.6 seconds (effective 360.5 kbit/s)...
+Hash of data verified.
+Compressed 884448 bytes to 571459...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001b7db... (5 %)
+Writing at 0x0002592e... (8 %)
+Writing at 0x0002a734... (11 %)
+Writing at 0x00032f17... (14 %)
+Writing at 0x0003b71a... (17 %)
+Writing at 0x000411a8... (20 %)
+Writing at 0x0004696a... (22 %)
+Writing at 0x0004c310... (25 %)
+Writing at 0x00051d03... (28 %)
+Writing at 0x00057af8... (31 %)
+Writing at 0x0005d2b5... (34 %)
+Writing at 0x00062500... (37 %)
+Writing at 0x00067a75... (40 %)
+Writing at 0x0006cca6... (42 %)
+Writing at 0x0007237b... (45 %)
+Writing at 0x00077a8d... (48 %)
+Writing at 0x0007d5c3... (51 %)
+Writing at 0x000832b9... (54 %)
+Writing at 0x00088761... (57 %)
+Writing at 0x0008e01d... (60 %)
+Writing at 0x000938c0... (62 %)
+Writing at 0x00098f67... (65 %)
+Writing at 0x0009e75b... (68 %)
+Writing at 0x000a4483... (71 %)
+Writing at 0x000aa36f... (74 %)
+Writing at 0x000afc64... (77 %)
+Writing at 0x000b607d... (80 %)
+Writing at 0x000bb91e... (82 %)
+Writing at 0x000c10ef... (85 %)
+Writing at 0x000c9094... (88 %)
+Writing at 0x000d1ef0... (91 %)
+Writing at 0x000d7d98... (94 %)
+Writing at 0x000ddb4b... (97 %)
+Writing at 0x000e318e... (100 %)
+Wrote 884448 bytes (571459 compressed) at 0x00010000 in 13.3 seconds (effective 533.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 702.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

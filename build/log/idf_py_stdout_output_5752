@@ -1,0 +1,538 @@
+Z���K��.1[0m
+[�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.4-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Oct  6 2024 09:14:33[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=23d50h (146768) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00033d78 vaddr=3ffb0000 size=03ba4h ( 15268) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=00037924 vaddr=40080000 size=086f4h ( 34548) load[0m
+[0;32mI (181) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9a44ch (631884) map[0m
+[0;32mI (409) esp_image: segment 4: paddr=000da474 vaddr=400886f4 size=0da40h ( 55872) load[0m
+[0;32mI (443) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (444) boot: Disabling RNG early entropy source...[0m
+[0;32mI (455) cpu_start: Multicore app[0m
+[0;32mI (455) cpu_start: Pro cpu up.[0m
+[0;32mI (456) cpu_start: Starting app cpu, entry point is 0x40081390[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (473) cpu_start: Pro cpu start user code[0m
+[0;32mI (473) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (473) cpu_start: Application information:[0m
+[0;32mI (478) cpu_start: Project name:     firebase[0m
+[0;32mI (483) cpu_start: App version:      1[0m
+[0;32mI (488) cpu_start: Compile time:     Oct  6 2024 09:14:12[0m
+[0;32mI (494) cpu_start: ELF file SHA256:  ff3436c660873c54...[0m
+[0;32mI (500) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (505) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (510) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (515) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (520) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (527) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (533) heap_init: At 3FFB8228 len 00027DD8 (159 KiB): DRAM[0m
+[0;32mI (539) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (545) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (552) heap_init: At 40096134 len 00009ECC (39 KiB): IRAM[0m
+[0;32mI (559) spi_flash: detected chip: generic[0m
+[0;32mI (562) spi_flash: flash io: dio[0m
+[0;33mW (566) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (580) app_start: Starting scheduler on CPU0[0m
+[0;32mI (585) app_start: Starting scheduler on CPU1[0m
+[0;32mI (585) main_task: Started on CPU0[0m
+[0;32mI (595) main_task: Calling app_main()[0m
+I (645) wifi:wifi driver task: 3ffc011c, prio:23, stack:6656, core=0
+I (655) wifi:wifi firmware version: 3ce09e5
+I (655) wifi:wifi certification version: v7.0
+I (655) wifi:config NVS flash: enabled
+I (655) wifi:config nano formating: disabled
+I (665) wifi:Init data frame dynamic rx buffer num: 32
+I (665) wifi:Init static rx mgmt buffer num: 5
+I (675) wifi:Init management short buffer num: 32
+I (675) wifi:Init dynamic tx buffer num: 32
+I (685) wifi:Init static rx buffer size: 1600
+I (685) wifi:Init static rx buffer num: 10
+I (685) wifi:Init dynamic rx buffer num: 32
+[0;32mI (695) wifi_init: rx ba win: 6[0m
+[0;32mI (695) wifi_init: tcpip mbox: 32[0m
+[0;32mI (705) wifi_init: udp mbox: 6[0m
+[0;32mI (705) wifi_init: tcp mbox: 6[0m
+[0;32mI (705) wifi_init: tcp tx win: 5760[0m
+[0;32mI (715) wifi_init: tcp rx win: 5760[0m
+[0;32mI (715) wifi_init: tcp mss: 1440[0m
+[0;32mI (725) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (725) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (735) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (825) wifi:mode : sta (10:06:1c:86:c0:88)
+I (825) wifi:enable tsf
+[0;31mE (835) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (835) esp-tls: Failed to open new connection[0m
+[0;31mE (845) transport_base: Failed to open a new connection[0m
+[0;31mE (855) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (855) Firebase: Failed to send data[0m
+I (1445) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (1445) wifi:state: init -> auth (b0)
+[0;31mE (3085) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3085) esp-tls: Failed to open new connection[0m
+[0;31mE (3095) transport_base: Failed to open a new connection[0m
+[0;31mE (3095) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (3105) Firebase: Failed to send data[0m
+I (3145) wifi:state: auth -> assoc (0)
+I (3155) wifi:state: assoc -> run (10)
+I (3185) wifi:connected with Redmi, aid = 1, channel 6, BW20, bssid = b6:55:a6:e3:92:3c
+I (3185) wifi:security: WPA3-SAE, phy: bgn, rssi: -13
+I (3215) wifi:pm start, type: 1
+
+I (3215) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3275) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (3275) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (4225) esp_netif_handlers: sta ip: 192.168.142.1, mask: 255.255.255.0, gw: 192.168.142.162[0m
+[0;32mI (4225) wifi_station: Got IP: 192.168.142.1[0m
+[0;31mE (5595) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (5595) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (5605) esp-tls: create_ssl_handle failed[0m
+[0;31mE (5615) esp-tls: Failed to open new connection[0m
+[0;31mE (5615) transport_base: Failed to open a new connection[0m
+[0;31mE (5625) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (5625) Firebase: Failed to send data[0m
+[0;31mE (7695) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (7695) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (7705) esp-tls: create_ssl_handle failed[0m
+[0;31mE (7715) esp-tls: Failed to open new connection[0m
+[0;31mE (7715) transport_base: Failed to open a new connection[0m
+[0;31mE (7725) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (7725) Firebase: Failed to send data[0m
+[0;31mE (9835) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (9835) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (9845) esp-tls: create_ssl_handle failed[0m
+[0;31mE (9855) esp-tls: Failed to open new connection[0m
+[0;31mE (9855) transport_base: Failed to open a new connection[0m
+[0;31mE (9865) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (9865) Firebase: Failed to send data[0m
+[0;31mE (12015) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (12015) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (12025) esp-tls: create_ssl_handle failed[0m
+[0;31mE (12035) esp-tls: Failed to open new connection[0m
+[0;31mE (12035) transport_base: Failed to open a new connection[0m
+[0;31mE (12045) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (12045) Firebase: Failed to send data[0m
+[0;31mE (14195) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (14195) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (14215) esp-tls: create_ssl_handle failed[0m
+[0;31mE (14215) esp-tls: Failed to open new connection[0m
+[0;31mE (14225) transport_base: Failed to open a new connection[0m
+[0;31mE (14225) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (14235) Firebase: Failed to send data[0m
+[0;31mE (16395) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (16395) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+I (16395) wifi:<ba-add>idx:0 (ifx:0, b6:55:a6:e3:92:3c), tid:3, ssn:16, winSize:64
+[0;31mE (16415) esp-tls: create_ssl_handle failed[0m
+[0;31mE (16415) esp-tls: Failed to open new connection[0m
+[0;31mE (16425) transport_base: Failed to open a new connection[0m
+[0;31mE (16435) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (16435) Firebase: Failed to send data[0m
+[0;31mE (18585) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (18585) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (18595) esp-tls: create_ssl_handle failed[0m
+[0;31mE (18605) esp-tls: Failed to open new connection[0m
+[0;31mE (18605) transport_base: Failed to open a new connection[0m
+[0;31mE (18615) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (18615) Firebase: Failed to send data[0m
+[0;31mE (20705) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (20705) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (20715) esp-tls: create_ssl_handle failed[0m
+[0;31mE (20715) esp-tls: Failed to open new connection[0m
+[0;31mE (20725) transport_base: Failed to open a new connection[0m
+[0;31mE (20735) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (20735) Firebase: Failed to send data[0m
+[0;31mE (22945) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (22945) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (22955) esp-tls: create_ssl_handle failed[0m
+[0;31mE (22965) esp-tls: Failed to open new connection[0m
+[0;31mE (22965) transport_base: Failed to open a new connection[0m
+[0;31mE (22975) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (22975) Firebase: Failed to send data[0m
+[0;31mE (25105) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (25105) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (25115) esp-tls: create_ssl_handle failed[0m
+[0;31mE (25115) esp-tls: Failed to open new connection[0m
+[0;31mE (25125) transport_base: Failed to open a new connection[0m
+[0;31mE (25135) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (25135) Firebase: Failed to send data[0m
+[0;31mE (27245) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (27245) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (27255) esp-tls: create_ssl_handle failed[0m
+[0;31mE (27265) esp-tls: Failed to open new connection[0m
+[0;31mE (27265) transport_base: Failed to open a new connection[0m
+[0;31mE (27275) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (27275) Firebase: Failed to send data[0m
+[0;31mE (29385) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (29395) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (29405) esp-tls: create_ssl_handle failed[0m
+[0;31mE (29405) esp-tls: Failed to open new connection[0m
+[0;31mE (29415) transport_base: Failed to open a new connection[0m
+[0;31mE (29425) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (29425) Firebase: Failed to send data[0m
+[0;31mE (31595) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (31595) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (31605) esp-tls: create_ssl_handle failed[0m
+[0;31mE (31605) esp-tls: Failed to open new connection[0m
+[0;31mE (31615) transport_base: Failed to open a new connection[0m
+[0;31mE (31625) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (31625) Firebase: Failed to send data[0m
+[0;31mE (33785) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (33785) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (33805) esp-tls: create_ssl_handle failed[0m
+[0;31mE (33805) esp-tls: Failed to open new connection[0m
+[0;31mE (33815) transport_base: Failed to open a new connection[0m
+[0;31mE (33825) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (33825) Firebase: Failed to send data[0m
+[0;31mE (35995) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (35995) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (36005) esp-tls: create_ssl_handle failed[0m
+[0;31mE (36005) esp-tls: Failed to open new connection[0m
+[0;31mE (36015) transport_base: Failed to open a new connection[0m
+[0;31mE (36025) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (36025) Firebase: Failed to send data[0m
+[0;31mE (38315) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (38315) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (38325) esp-tls: create_ssl_handle failed[0m
+[0;31mE (38335) esp-tls: Failed to open new connection[0m
+[0;31mE (38335) transport_base: Failed to open a new connection[0m
+[0;31mE (38345) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (38345) Firebase: Failed to send data[0m
+[0;31mE (40555) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (40555) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (40565) esp-tls: create_ssl_handle failed[0m
+[0;31mE (40575) esp-tls: Failed to open new connection[0m
+[0;31mE (40575) transport_base: Failed to open a new connection[0m
+[0;31mE (40585) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (40595) Firebase: Failed to send data[0m
+[0;31mE (42805) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (42805) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (42815) esp-tls: create_ssl_handle failed[0m
+[0;31mE (42825) esp-tls: Failed to open new connection[0m
+[0;31mE (42825) transport_base: Failed to open a new connection[0m
+[0;31mE (42835) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (42845) Firebase: Failed to send data[0m
+[0;31mE (44935) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (44935) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (44945) esp-tls: create_ssl_handle failed[0m
+[0;31mE (44945) esp-tls: Failed to open new connection[0m
+[0;31mE (44955) transport_base: Failed to open a new connection[0m
+[0;31mE (44965) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (44965) Firebase: Failed to send data[0m
+[0;31mE (47025) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (47025) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (47035) esp-tls: create_ssl_handle failed[0m
+[0;31mE (47045) esp-tls: Failed to open new connection[0m
+[0;31mE (47045) transport_base: Failed to open a new connection[0m
+[0;31mE (47055) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (47055) Firebase: Failed to send data[0m
+[0;31mE (49185) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (49185) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (49195) esp-tls: create_ssl_handle failed[0m
+[0;31mE (49195) esp-tls: Failed to open new connection[0m
+[0;31mE (49205) transport_base: Failed to open a new connection[0m
+[0;31mE (49215) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (49215) Firebase: Failed to send data[0m
+[0;31mE (51375) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (51385) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (51395) esp-tls: create_ssl_handle failed[0m
+[0;31mE (51395) esp-tls: Failed to open new connection[0m
+[0;31mE (51405) transport_base: Failed to open a new connection[0m
+[0;31mE (51415) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (51415) Firebase: Failed to send data[0m
+[0;31mE (53675) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (53675) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (53685) esp-tls: create_ssl_handle failed[0m
+[0;31mE (53695) esp-tls: Failed to open new connection[0m
+[0;31mE (53695) transport_base: Failed to open a new connection[0m
+[0;31mE (53705) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (53705) Firebase: Failed to send data[0m
+[0;31mE (55855) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (55855) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (55865) esp-tls: create_ssl_handle failed[0m
+[0;31mE (55875) esp-tls: Failed to open new connection[0m
+[0;31mE (55875) transport_base: Failed to open a new connection[0m
+[0;31mE (55885) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (55895) Firebase: Failed to send data[0m
+[0;31mE (58165) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (58165) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (58175) esp-tls: create_ssl_handle failed[0m
+[0;31mE (58185) esp-tls: Failed to open new connection[0m
+[0;31mE (58185) transport_base: Failed to open a new connection[0m
+[0;31mE (58195) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (58205) Firebase: Failed to send data[0m
+[0;31mE (60305) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (60305) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (60315) esp-tls: create_ssl_handle failed[0m
+[0;31mE (60315) esp-tls: Failed to open new connection[0m
+[0;31mE (60325) transport_base: Failed to open a new connection[0m
+[0;31mE (60335) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (60335) Firebase: Failed to send data[0m
+[0;31mE (62425) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (62435) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (62445) esp-tls: create_ssl_handle failed[0m
+[0;31mE (62445) esp-tls: Failed to open new connection[0m
+[0;31mE (62455) transport_base: Failed to open a new connection[0m
+[0;31mE (62465) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (62465) Firebase: Failed to send data[0m
+[0;31mE (64725) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (64725) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (64735) esp-tls: create_ssl_handle failed[0m
+[0;31mE (64745) esp-tls: Failed to open new connection[0m
+[0;31mE (64745) transport_base: Failed to open a new connection[0m
+[0;31mE (64755) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (64755) Firebase: Failed to send data[0m
+[0;31mE (66815) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (66815) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (66825) esp-tls: create_ssl_handle failed[0m
+[0;31mE (66825) esp-tls: Failed to open new connection[0m
+[0;31mE (66835) transport_base: Failed to open a new connection[0m
+[0;31mE (66845) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (66845) Firebase: Failed to send data[0m
+[0;31mE (68955) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (68955) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (68965) esp-tls: create_ssl_handle failed[0m
+[0;31mE (68965) esp-tls: Failed to open new connection[0m
+[0;31mE (68975) transport_base: Failed to open a new connection[0m
+[0;31mE (68985) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (68985) Firebase: Failed to send data[0m
+[0;31mE (71055) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (71065) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (71075) esp-tls: create_ssl_handle failed[0m
+[0;31mE (71075) esp-tls: Failed to open new connection[0m
+[0;31mE (71085) transport_base: Failed to open a new connection[0m
+[0;31mE (71095) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (71095) Firebase: Failed to send data[0m
+[0;31mE (73165) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (73165) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (73175) esp-tls: create_ssl_handle failed[0m
+[0;31mE (73185) esp-tls: Failed to open new connection[0m
+[0;31mE (73185) transport_base: Failed to open a new connection[0m
+[0;31mE (73195) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (73195) Firebase: Failed to send data[0m
+[0;31mE (75355) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (75365) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (75375) esp-tls: create_ssl_handle failed[0m
+[0;31mE (75375) esp-tls: Failed to open new connection[0m
+[0;31mE (75385) transport_base: Failed to open a new connection[0m
+[0;31mE (75395) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (75395) Firebase: Failed to send data[0m
+[0;31mE (77665) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (77665) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (77675) esp-tls: create_ssl_handle failed[0m
+[0;31mE (77685) esp-tls: Failed to open new connection[0m
+[0;31mE (77685) transport_base: Failed to open a new connection[0m
+[0;31mE (77695) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (77695) Firebase: Failed to send data[0m
+[0;31mE (79875) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (79885) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (79895) esp-tls: create_ssl_handle failed[0m
+[0;31mE (79895) esp-tls: Failed to open new connection[0m
+[0;31mE (79905) transport_base: Failed to open a new connection[0m
+[0;31mE (79915) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (79915) Firebase: Failed to send data[0m
+[0;31mE (82065) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (82065) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (82075) esp-tls: create_ssl_handle failed[0m
+[0;31mE (82085) esp-tls: Failed to open new connection[0m
+[0;31mE (82085) transport_base: Failed to open a new connection[0m
+[0;31mE (82095) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (82095) Firebase: Failed to send data[0m
+[0;31mE (84265) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (84265) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (84275) esp-tls: create_ssl_handle failed[0m
+[0;31mE (84275) esp-tls: Failed to open new connection[0m
+[0;31mE (84285) transport_base: Failed to open a new connection[0m
+[0;31mE (84295) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (84295) Firebase: Failed to send data[0m
+[0;31mE (86365) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (86365) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (86375) esp-tls: create_ssl_handle failed[0m
+[0;31mE (86385) esp-tls: Failed to open new connection[0m
+[0;31mE (86385) transport_base: Failed to open a new connection[0m
+[0;31mE (86395) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (86395) Firebase: Failed to send data[0m
+[0;31mE (88565) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (88565) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (88575) esp-tls: create_ssl_handle failed[0m
+[0;31mE (88575) esp-tls: Failed to open new connection[0m
+[0;31mE (88585) transport_base: Failed to open a new connection[0m
+[0;31mE (88595) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (88595) Firebase: Failed to send data[0m
+[0;31mE (90775) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (90775) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (90785) esp-tls: create_ssl_handle failed[0m
+[0;31mE (90795) esp-tls: Failed to open new connection[0m
+[0;31mE (90795) transport_base: Failed to open a new connection[0m
+[0;31mE (90805) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (90805) Firebase: Failed to send data[0m
+[0;31mE (92985) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (92985) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (92995) esp-tls: create_ssl_handle failed[0m
+[0;31mE (93005) esp-tls: Failed to open new connection[0m
+[0;31mE (93005) transport_base: Failed to open a new connection[0m
+[0;31mE (93015) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (93025) Firebase: Failed to send data[0m
+[0;31mE (95165) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (95165) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (95175) esp-tls: create_ssl_handle failed[0m
+[0;31mE (95185) esp-tls: Failed to open new connection[0m
+[0;31mE (95185) transport_base: Failed to open a new connection[0m
+[0;31mE (95195) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (95195) Firebase: Failed to send data[0m
+[0;31mE (97305) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (97305) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (97315) esp-tls: create_ssl_handle failed[0m
+[0;31mE (97325) esp-tls: Failed to open new connection[0m
+[0;31mE (97325) transport_base: Failed to open a new connection[0m
+[0;31mE (97335) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (97345) Firebase: Failed to send data[0m
+[0;31mE (99395) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (99395) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (99405) esp-tls: create_ssl_handle failed[0m
+[0;31mE (99415) esp-tls: Failed to open new connection[0m
+[0;31mE (99415) transport_base: Failed to open a new connection[0m
+[0;31mE (99425) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (99425) Firebase: Failed to send data[0m
+[0;31mE (101595) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (101595) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (101605) esp-tls: create_ssl_handle failed[0m
+[0;31mE (101605) esp-tls: Failed to open new connection[0m
+[0;31mE (101615) transport_base: Failed to open a new connection[0m
+[0;31mE (101625) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (101625) Firebase: Failed to send data[0m
+[0;31mE (103755) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (103755) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (103765) esp-tls: create_ssl_handle failed[0m
+[0;31mE (103765) esp-tls: Failed to open new connection[0m
+[0;31mE (103775) transport_base: Failed to open a new connection[0m
+[0;31mE (103785) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (103785) Firebase: Failed to send data[0m
+[0;31mE (105855) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (105855) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (105865) esp-tls: create_ssl_handle failed[0m
+[0;31mE (105875) esp-tls: Failed to open new connection[0m
+[0;31mE (105875) transport_base: Failed to open a new connection[0m
+[0;31mE (105885) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (105885) Firebase: Failed to send data[0m
+[0;31mE (107955) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (107955) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (107965) esp-tls: create_ssl_handle failed[0m
+[0;31mE (107965) esp-tls: Failed to open new connection[0m
+[0;31mE (107975) transport_base: Failed to open a new connection[0m
+[0;31mE (107985) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (107985) Firebase: Failed to send data[0m
+[0;31mE (110195) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (110195) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (110205) esp-tls: create_ssl_handle failed[0m
+[0;31mE (110205) esp-tls: Failed to open new connection[0m
+[0;31mE (110215) transport_base: Failed to open a new connection[0m
+[0;31mE (110225) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (110225) Firebase: Failed to send data[0m
+[0;31mE (112275) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (112275) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (112285) esp-tls: create_ssl_handle failed[0m
+[0;31mE (112295) esp-tls: Failed to open new connection[0m
+[0;31mE (112295) transport_base: Failed to open a new connection[0m
+[0;31mE (112305) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (112305) Firebase: Failed to send data[0m
+[0;31mE (114375) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (114375) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (114385) esp-tls: create_ssl_handle failed[0m
+[0;31mE (114385) esp-tls: Failed to open new connection[0m
+[0;31mE (114395) transport_base: Failed to open a new connection[0m
+[0;31mE (114405) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (114405) Firebase: Failed to send data[0m
+[0;31mE (116535) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (116535) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (116545) esp-tls: create_ssl_handle failed[0m
+[0;31mE (116555) esp-tls: Failed to open new connection[0m
+[0;31mE (116555) transport_base: Failed to open a new connection[0m
+[0;31mE (116565) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (116575) Firebase: Failed to send data[0m
+[0;31mE (118705) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (118705) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (118715) esp-tls: create_ssl_handle failed[0m
+[0;31mE (118725) esp-tls: Failed to open new connection[0m
+[0;31mE (118725) transport_base: Failed to open a new connection[0m
+[0;31mE (118735) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (118735) Firebase: Failed to send data[0m
+[0;31mE (120855) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (120855) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (120865) esp-tls: create_ssl_handle failed[0m
+[0;31mE (120865) esp-tls: Failed to open new connection[0m
+[0;31mE (120875) transport_base: Failed to open a new connection[0m
+[0;31mE (120885) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (120885) Firebase: Failed to send data[0m
+[0;31mE (123095) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (123095) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (123105) esp-tls: create_ssl_handle failed[0m
+[0;31mE (123115) esp-tls: Failed to open new connection[0m
+[0;31mE (123115) transport_base: Failed to open a new connection[0m
+[0;31mE (123125) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (123135) Firebase: Failed to send data[0m
+[0;31mE (125345) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (125345) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (125355) esp-tls: create_ssl_handle failed[0m
+[0;31mE (125365) esp-tls: Failed to open new connection[0m
+[0;31mE (125365) transport_base: Failed to open a new connection[0m
+[0;31mE (125375) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (125385) Firebase: Failed to send data[0m
+[0;31mE (127445) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (127445) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (127455) esp-tls: create_ssl_handle failed[0m
+[0;31mE (127455) esp-tls: Failed to open new connection[0m
+[0;31mE (127465) transport_base: Failed to open a new connection[0m
+[0;31mE (127475) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (127475) Firebase: Failed to send data[0m
+[0;31mE (129535) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (129535) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (129545) esp-tls: create_ssl_handle failed[0m
+[0;31mE (129555) esp-tls: Failed to open new connection[0m
+[0;31mE (129555) transport_base: Failed to open a new connection[0m
+[0;31mE (129565) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (129565) Firebase: Failed to send data[0m
+[0;31mE (131695) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (131695) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (131705) esp-tls: create_ssl_handle failed[0m
+[0;31mE (131715) esp-tls: Failed to open new connection[0m
+[0;31mE (131715) transport_base: Failed to open a new connection[0m
+[0;31mE (131725) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (131725) Firebase: Failed to send data[0m
+[0;31mE (133785) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (133785) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (133805) esp-tls: create_ssl_handle failed[0m
+[0;31mE (133805) esp-tls: Failed to open new connection[0m
+[0;31mE (133815) transport_base: Failed to open a new connection[0m
+[0;31mE (133815) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (133825) Firebase: Failed to send data[0m
+[0;31mE (135995) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (135995) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (136015) esp-tls: create_ssl_handle failed[0m
+[0;31mE (136015) esp-tls: Failed to open new connection[0m
+[0;31mE (136025) transport_base: Failed to open a new connection[0m
+[0;31mE (136035) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (136035) Firebase: Failed to send data[0m

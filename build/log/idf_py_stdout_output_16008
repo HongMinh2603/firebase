@@ -1,0 +1,697 @@
+W��K��.1[0m
+[0;32�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.4-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Oct  6 2024 09:14:33[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=23cb8h (146616) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00033ce0 vaddr=3ffb0000 size=03ba4h ( 15268) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003788c vaddr=40080000 size=0878ch ( 34700) load[0m
+[0;32mI (181) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9a128h (631080) map[0m
+[0;32mI (409) esp_image: segment 4: paddr=000da150 vaddr=4008878c size=0d9a8h ( 55720) load[0m
+[0;32mI (443) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (443) boot: Disabling RNG early entropy source...[0m
+[0;32mI (455) cpu_start: Multicore app[0m
+[0;32mI (455) cpu_start: Pro cpu up.[0m
+[0;32mI (455) cpu_start: Starting app cpu, entry point is 0x40081390[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (473) cpu_start: Pro cpu start user code[0m
+[0;32mI (473) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (473) cpu_start: Application information:[0m
+[0;32mI (478) cpu_start: Project name:     firebase[0m
+[0;32mI (483) cpu_start: App version:      1[0m
+[0;32mI (487) cpu_start: Compile time:     Oct  6 2024 09:14:12[0m
+[0;32mI (493) cpu_start: ELF file SHA256:  249924d65c205f63...[0m
+[0;32mI (499) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (505) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (509) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (514) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (519) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (526) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (532) heap_init: At 3FFB8218 len 00027DE8 (159 KiB): DRAM[0m
+[0;32mI (538) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (545) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (551) heap_init: At 40096134 len 00009ECC (39 KiB): IRAM[0m
+[0;32mI (559) spi_flash: detected chip: generic[0m
+[0;32mI (562) spi_flash: flash io: dio[0m
+[0;33mW (566) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (580) app_start: Starting scheduler on CPU0[0m
+[0;32mI (584) app_start: Starting scheduler on CPU1[0m
+[0;32mI (584) main_task: Started on CPU0[0m
+[0;32mI (594) main_task: Calling app_main()[0m
+I (644) wifi:wifi driver task: 3ffc010c, prio:23, stack:6656, core=0
+I (654) wifi:wifi firmware version: 3ce09e5
+I (654) wifi:wifi certification version: v7.0
+I (654) wifi:config NVS flash: enabled
+I (654) wifi:config nano formating: disabled
+I (664) wifi:Init data frame dynamic rx buffer num: 32
+I (664) wifi:Init static rx mgmt buffer num: 5
+I (674) wifi:Init management short buffer num: 32
+I (674) wifi:Init dynamic tx buffer num: 32
+I (684) wifi:Init static rx buffer size: 1600
+I (684) wifi:Init static rx buffer num: 10
+I (684) wifi:Init dynamic rx buffer num: 32
+[0;32mI (694) wifi_init: rx ba win: 6[0m
+[0;32mI (694) wifi_init: tcpip mbox: 32[0m
+[0;32mI (704) wifi_init: udp mbox: 6[0m
+[0;32mI (704) wifi_init: tcp mbox: 6[0m
+[0;32mI (704) wifi_init: tcp tx win: 5760[0m
+[0;32mI (714) wifi_init: tcp rx win: 5760[0m
+[0;32mI (714) wifi_init: tcp mss: 1440[0m
+[0;32mI (724) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (724) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (734) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (824) wifi:mode : sta (10:06:1c:86:c0:88)
+I (824) wifi:enable tsf
+[0;31mE (834) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (834) esp-tls: Failed to open new connection[0m
+[0;31mE (844) transport_base: Failed to open a new connection[0m
+[0;31mE (844) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (854) Firebase: Failed to send data[0m
+[0;31mE (2854) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2854) esp-tls: Failed to open new connection[0m
+[0;31mE (2864) transport_base: Failed to open a new connection[0m
+[0;31mE (2864) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (2874) Firebase: Failed to send data[0m
+[0;31mE (4874) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (4874) esp-tls: Failed to open new connection[0m
+[0;31mE (4874) transport_base: Failed to open a new connection[0m
+[0;31mE (4884) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (4894) Firebase: Failed to send data[0m
+[0;31mE (6894) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (6894) esp-tls: Failed to open new connection[0m
+[0;31mE (6904) transport_base: Failed to open a new connection[0m
+[0;31mE (6904) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (6914) Firebase: Failed to send data[0m
+[0;31mE (8914) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8914) esp-tls: Failed to open new connection[0m
+[0;31mE (8914) transport_base: Failed to open a new connection[0m
+[0;31mE (8924) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (8934) Firebase: Failed to send data[0m
+[0;31mE (10934) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (10934) esp-tls: Failed to open new connection[0m
+[0;31mE (10944) transport_base: Failed to open a new connection[0m
+[0;31mE (10944) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (10954) Firebase: Failed to send data[0m
+[0;31mE (12954) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (12954) esp-tls: Failed to open new connection[0m
+[0;31mE (12964) transport_base: Failed to open a new connection[0m
+[0;31mE (12964) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (12974) Firebase: Failed to send data[0m
+[0;31mE (14974) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (14974) esp-tls: Failed to open new connection[0m
+[0;31mE (14984) transport_base: Failed to open a new connection[0m
+[0;31mE (14984) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (14994) Firebase: Failed to send data[0m
+[0;31mE (16994) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (16994) esp-tls: Failed to open new connection[0m
+[0;31mE (17004) transport_base: Failed to open a new connection[0m
+[0;31mE (17004) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (17014) Firebase: Failed to send data[0m
+[0;31mE (19014) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (19014) esp-tls: Failed to open new connection[0m
+[0;31mE (19024) transport_base: Failed to open a new connection[0m
+[0;31mE (19024) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (19034) Firebase: Failed to send data[0m
+[0;31mE (21034) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (21034) esp-tls: Failed to open new connection[0m
+[0;31mE (21044) transport_base: Failed to open a new connection[0m
+[0;31mE (21044) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (21054) Firebase: Failed to send data[0m
+[0;31mE (23054) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (23054) esp-tls: Failed to open new connection[0m
+[0;31mE (23064) transport_base: Failed to open a new connection[0m
+[0;31mE (23064) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (23074) Firebase: Failed to send data[0m
+[0;31mE (25074) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (25074) esp-tls: Failed to open new connection[0m
+[0;31mE (25084) transport_base: Failed to open a new connection[0m
+[0;31mE (25084) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (25094) Firebase: Failed to send data[0m
+[0;31mE (27094) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (27094) esp-tls: Failed to open new connection[0m
+[0;31mE (27104) transport_base: Failed to open a new connection[0m
+[0;31mE (27104) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (27114) Firebase: Failed to send data[0m
+[0;31mE (29114) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (29114) esp-tls: Failed to open new connection[0m
+[0;31mE (29124) transport_base: Failed to open a new connection[0m
+[0;31mE (29124) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (29134) Firebase: Failed to send data[0m
+[0;31mE (31134) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (31134) esp-tls: Failed to open new connection[0m
+[0;31mE (31144) transport_base: Failed to open a new connection[0m
+[0;31mE (31144) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (31154) Firebase: Failed to send data[0m
+[0;31mE (33154) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (33154) esp-tls: Failed to open new connection[0m
+[0;31mE (33164) transport_base: Failed to open a new connection[0m
+[0;31mE (33164) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (33174) Firebase: Failed to send data[0m
+[0;31mE (35174) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (35174) esp-tls: Failed to open new connection[0m
+[0;31mE (35184) transport_base: Failed to open a new connection[0m
+[0;31mE (35184) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (35194) Firebase: Failed to send data[0m
+[0;31mE (37194) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (37194) esp-tls: Failed to open new connection[0m
+[0;31mE (37204) transport_base: Failed to open a new connection[0m
+[0;31mE (37204) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (37214) Firebase: Failed to send data[0m
+[0;31mE (39214) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (39214) esp-tls: Failed to open new connection[0m
+[0;31mE (39224) transport_base: Failed to open a new connection[0m
+[0;31mE (39224) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (39234) Firebase: Failed to send data[0m
+[0;31mE (41234) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (41234) esp-tls: Failed to open new connection[0m
+[0;31mE (41244) transport_base: Failed to open a new connection[0m
+[0;31mE (41244) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (41254) Firebase: Failed to send data[0m
+[0;31mE (43254) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (43254) esp-tls: Failed to open new connection[0m
+[0;31mE (43264) transport_base: Failed to open a new connection[0m
+[0;31mE (43264) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (43274) Firebase: Failed to send data[0m
+[0;31mE (45274) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (45274) esp-tls: Failed to open new connection[0m
+[0;31mE (45284) transport_base: Failed to open a new connection[0m
+[0;31mE (45284) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (45294) Firebase: Failed to send data[0m
+[0;31mE (47294) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (47294) esp-tls: Failed to open new connection[0m
+[0;31mE (47304) transport_base: Failed to open a new connection[0m
+[0;31mE (47304) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (47314) Firebase: Failed to send data[0m
+[0;31mE (49314) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (49314) esp-tls: Failed to open new connection[0m
+[0;31mE (49324) transport_base: Failed to open a new connection[0m
+[0;31mE (49324) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (49334) Firebase: Failed to send data[0m
+[0;31mE (51334) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (51334) esp-tls: Failed to open new connection[0m
+[0;31mE (51344) transport_base: Failed to open a new connection[0m
+[0;31mE (51344) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (51354) Firebase: Failed to send data[0m
+[0;31mE (53354) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (53354) esp-tls: Failed to open new connection[0m
+[0;31mE (53364) transport_base: Failed to open a new connection[0m
+[0;31mE (53364) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (53374) Firebase: Failed to send data[0m
+[0;31mE (55374) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (55374) esp-tls: Failed to open new connection[0m
+[0;31mE (55384) transport_base: Failed to open a new connection[0m
+[0;31mE (55384) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (55394) Firebase: Failed to send data[0m
+[0;31mE (57394) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (57394) esp-tls: Failed to open new connection[0m
+[0;31mE (57404) transport_base: Failed to open a new connection[0m
+[0;31mE (57404) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (57414) Firebase: Failed to send data[0m
+[0;31mE (59414) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (59414) esp-tls: Failed to open new connection[0m
+[0;31mE (59424) transport_base: Failed to open a new connection[0m
+[0;31mE (59424) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (59434) Firebase: Failed to send data[0m
+[0;31mE (61434) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (61434) esp-tls: Failed to open new connection[0m
+[0;31mE (61444) transport_base: Failed to open a new connection[0m
+[0;31mE (61444) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (61454) Firebase: Failed to send data[0m
+[0;31mE (63454) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (63454) esp-tls: Failed to open new connection[0m
+[0;31mE (63464) transport_base: Failed to open a new connection[0m
+[0;31mE (63464) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (63474) Firebase: Failed to send data[0m
+[0;31mE (65474) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (65474) esp-tls: Failed to open new connection[0m
+[0;31mE (65484) transport_base: Failed to open a new connection[0m
+[0;31mE (65484) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (65494) Firebase: Failed to send data[0m
+[0;31mE (67494) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (67494) esp-tls: Failed to open new connection[0m
+[0;31mE (67504) transport_base: Failed to open a new connection[0m
+[0;31mE (67504) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (67514) Firebase: Failed to send data[0m
+[0;31mE (69514) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (69514) esp-tls: Failed to open new connection[0m
+[0;31mE (69524) transport_base: Failed to open a new connection[0m
+[0;31mE (69524) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (69534) Firebase: Failed to send data[0m
+[0;31mE (71534) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (71534) esp-tls: Failed to open new connection[0m
+[0;31mE (71544) transport_base: Failed to open a new connection[0m
+[0;31mE (71544) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (71554) Firebase: Failed to send data[0m
+[0;31mE (73554) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (73554) esp-tls: Failed to open new connection[0m
+[0;31mE (73564) transport_base: Failed to open a new connection[0m
+[0;31mE (73564) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (73574) Firebase: Failed to send data[0m
+[0;31mE (75574) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (75574) esp-tls: Failed to open new connection[0m
+[0;31mE (75584) transport_base: Failed to open a new connection[0m
+[0;31mE (75584) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (75594) Firebase: Failed to send data[0m
+[0;31mE (77594) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (77594) esp-tls: Failed to open new connection[0m
+[0;31mE (77604) transport_base: Failed to open a new connection[0m
+[0;31mE (77604) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (77614) Firebase: Failed to send data[0m
+[0;31mE (79614) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (79614) esp-tls: Failed to open new connection[0m
+[0;31mE (79624) transport_base: Failed to open a new connection[0m
+[0;31mE (79624) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (79634) Firebase: Failed to send data[0m
+[0;31mE (81634) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (81634) esp-tls: Failed to open new connection[0m
+[0;31mE (81644) transport_base: Failed to open a new connection[0m
+[0;31mE (81644) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (81654) Firebase: Failed to send data[0m
+[0;31mE (83654) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (83654) esp-tls: Failed to open new connection[0m
+[0;31mE (83664) transport_base: Failed to open a new connection[0m
+[0;31mE (83664) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (83674) Firebase: Failed to send data[0m
+[0;31mE (85674) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (85674) esp-tls: Failed to open new connection[0m
+[0;31mE (85684) transport_base: Failed to open a new connection[0m
+[0;31mE (85684) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (85694) Firebase: Failed to send data[0m
+[0;31mE (87694) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (87694) esp-tls: Failed to open new connection[0m
+[0;31mE (87704) transport_base: Failed to open a new connection[0m
+[0;31mE (87704) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (87714) Firebase: Failed to send data[0m
+[0;31mE (89714) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (89714) esp-tls: Failed to open new connection[0m
+[0;31mE (89724) transport_base: Failed to open a new connection[0m
+[0;31mE (89724) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (89734) Firebase: Failed to send data[0m
+[0;31mE (91734) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (91734) esp-tls: Failed to open new connection[0m
+[0;31mE (91744) transport_base: Failed to open a new connection[0m
+[0;31mE (91744) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (91754) Firebase: Failed to send data[0m
+[0;31mE (93754) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (93754) esp-tls: Failed to open new connection[0m
+[0;31mE (93764) transport_base: Failed to open a new connection[0m
+[0;31mE (93764) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (93774) Firebase: Failed to send data[0m
+[0;31mE (95774) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (95774) esp-tls: Failed to open new connection[0m
+[0;31mE (95784) transport_base: Failed to open a new connection[0m
+[0;31mE (95784) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (95794) Firebase: Failed to send data[0m
+[0;31mE (97794) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (97794) esp-tls: Failed to open new connection[0m
+[0;31mE (97804) transport_base: Failed to open a new connection[0m
+[0;31mE (97804) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (97814) Firebase: Failed to send data[0m
+[0;31mE (99814) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (99814) esp-tls: Failed to open new connection[0m
+[0;31mE (99824) transport_base: Failed to open a new connection[0m
+[0;31mE (99824) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (99834) Firebase: Failed to send data[0m
+[0;31mE (101834) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (101834) esp-tls: Failed to open new connection[0m
+[0;31mE (101844) transport_base: Failed to open a new connection[0m
+[0;31mE (101844) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (101854) Firebase: Failed to send data[0m
+[0;31mE (103854) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (103854) esp-tls: Failed to open new connection[0m
+[0;31mE (103864) transport_base: Failed to open a new connection[0m
+[0;31mE (103864) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (103874) Firebase: Failed to send data[0m
+[0;31mE (105874) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (105874) esp-tls: Failed to open new connection[0m
+[0;31mE (105884) transport_base: Failed to open a new connection[0m
+[0;31mE (105884) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (105894) Firebase: Failed to send data[0m
+[0;31mE (107894) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (107894) esp-tls: Failed to open new connection[0m
+[0;31mE (107904) transport_base: Failed to open a new connection[0m
+[0;31mE (107904) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (107914) Firebase: Failed to send data[0m
+[0;31mE (109914) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (109914) esp-tls: Failed to open new connection[0m
+[0;31mE (109924) transport_base: Failed to open a new connection[0m
+[0;31mE (109924) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (109934) Firebase: Failed to send data[0m
+[0;31mE (111934) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (111934) esp-tls: Failed to open new connection[0m
+[0;31mE (111944) transport_base: Failed to open a new connection[0m
+[0;31mE (111944) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (111954) Firebase: Failed to send data[0m
+[0;31mE (113954) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (113954) esp-tls: Failed to open new connection[0m
+[0;31mE (113964) transport_base: Failed to open a new connection[0m
+[0;31mE (113964) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (113974) Firebase: Failed to send data[0m
+[0;31mE (115974) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (115974) esp-tls: Failed to open new connection[0m
+[0;31mE (115984) transport_base: Failed to open a new connection[0m
+[0;31mE (115984) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (115994) Firebase: Failed to send data[0m
+[0;31mE (117994) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (117994) esp-tls: Failed to open new connection[0m
+[0;31mE (118004) transport_base: Failed to open a new connection[0m
+[0;31mE (118004) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (118014) Firebase: Failed to send data[0m
+[0;31mE (120014) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (120014) esp-tls: Failed to open new connection[0m
+[0;31mE (120024) transport_base: Failed to open a new connection[0m
+[0;31mE (120024) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (120034) Firebase: Failed to send data[0m
+[0;31mE (122034) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (122034) esp-tls: Failed to open new connection[0m
+[0;31mE (122044) transport_base: Failed to open a new connection[0m
+[0;31mE (122044) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (122054) Firebase: Failed to send data[0m
+[0;31mE (124054) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (124054) esp-tls: Failed to open new connection[0m
+[0;31mE (124064) transport_base: Failed to open a new connection[0m
+[0;31mE (124064) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (124074) Firebase: Failed to send data[0m
+[0;31mE (126074) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (126074) esp-tls: Failed to open new connection[0m
+[0;31mE (126084) transport_base: Failed to open a new connection[0m
+[0;31mE (126084) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (126094) Firebase: Failed to send data[0m
+[0;31mE (128094) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (128094) esp-tls: Failed to open new connection[0m
+[0;31mE (128104) transport_base: Failed to open a new connection[0m
+[0;31mE (128104) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (128114) Firebase: Failed to send data[0m
+[0;31mE (130114) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (130114) esp-tls: Failed to open new connection[0m
+[0;31mE (130124) transport_base: Failed to open a new connection[0m
+[0;31mE (130124) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (130134) Firebase: Failed to send data[0m
+[0;31mE (132134) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (132134) esp-tls: Failed to open new connection[0m
+[0;31mE (132144) transport_base: Failed to open a new connection[0m
+[0;31mE (132144) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (132154) Firebase: Failed to send data[0m
+[0;31mE (134154) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (134154) esp-tls: Failed to open new connection[0m
+[0;31mE (134164) transport_base: Failed to open a new connection[0m
+[0;31mE (134164) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (134174) Firebase: Failed to send data[0m
+[0;31mE (136174) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (136174) esp-tls: Failed to open new connection[0m
+[0;31mE (136184) transport_base: Failed to open a new connection[0m
+[0;31mE (136184) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (136194) Firebase: Failed to send data[0m
+[0;31mE (138194) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (138194) esp-tls: Failed to open new connection[0m
+[0;31mE (138204) transport_base: Failed to open a new connection[0m
+[0;31mE (138204) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (138214) Firebase: Failed to send data[0m
+[0;31mE (140214) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (140214) esp-tls: Failed to open new connection[0m
+[0;31mE (140224) transport_base: Failed to open a new connection[0m
+[0;31mE (140224) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (140234) Firebase: Failed to send data[0m
+[0;31mE (142234) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (142234) esp-tls: Failed to open new connection[0m
+[0;31mE (142244) transport_base: Failed to open a new connection[0m
+[0;31mE (142244) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (142254) Firebase: Failed to send data[0m
+[0;31mE (144254) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (144254) esp-tls: Failed to open new connection[0m
+[0;31mE (144264) transport_base: Failed to open a new connection[0m
+[0;31mE (144264) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (144274) Firebase: Failed to send data[0m
+[0;31mE (146274) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (146274) esp-tls: Failed to open new connection[0m
+[0;31mE (146284) transport_base: Failed to open a new connection[0m
+[0;31mE (146284) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (146294) Firebase: Failed to send data[0m
+[0;31mE (148294) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (148294) esp-tls: Failed to open new connection[0m
+[0;31mE (148304) transport_base: Failed to open a new connection[0m
+[0;31mE (148304) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (148314) Firebase: Failed to send data[0m
+[0;31mE (150314) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (150314) esp-tls: Failed to open new connection[0m
+[0;31mE (150324) transport_base: Failed to open a new connection[0m
+[0;31mE (150324) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (150334) Firebase: Failed to send data[0m
+[0;31mE (152334) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (152334) esp-tls: Failed to open new connection[0m
+[0;31mE (152344) transport_base: Failed to open a new connection[0m
+[0;31mE (152344) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (152354) Firebase: Failed to send data[0m
+[0;31mE (154354) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (154354) esp-tls: Failed to open new connection[0m
+[0;31mE (154364) transport_base: Failed to open a new connection[0m
+[0;31mE (154364) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (154374) Firebase: Failed to send data[0m
+[0;31mE (156374) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (156374) esp-tls: Failed to open new connection[0m
+[0;31mE (156384) transport_base: Failed to open a new connection[0m
+[0;31mE (156384) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (156394) Firebase: Failed to send data[0m
+[0;31mE (158394) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (158394) esp-tls: Failed to open new connection[0m
+[0;31mE (158404) transport_base: Failed to open a new connection[0m
+[0;31mE (158404) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (158414) Firebase: Failed to send data[0m
+[0;31mE (160414) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (160414) esp-tls: Failed to open new connection[0m
+[0;31mE (160424) transport_base: Failed to open a new connection[0m
+[0;31mE (160424) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (160434) Firebase: Failed to send data[0m
+[0;31mE (162434) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (162434) esp-tls: Failed to open new connection[0m
+[0;31mE (162444) transport_base: Failed to open a new connection[0m
+[0;31mE (162444) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (162454) Firebase: Failed to send data[0m
+[0;31mE (164454) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (164454) esp-tls: Failed to open new connection[0m
+[0;31mE (164464) transport_base: Failed to open a new connection[0m
+[0;31mE (164464) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (164474) Firebase: Failed to send data[0m
+[0;31mE (166474) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (166474) esp-tls: Failed to open new connection[0m
+[0;31mE (166484) transport_base: Failed to open a new connection[0m
+[0;31mE (166484) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (166494) Firebase: Failed to send data[0m
+[0;31mE (168494) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (168494) esp-tls: Failed to open new connection[0m
+[0;31mE (168504) transport_base: Failed to open a new connection[0m
+[0;31mE (168504) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (168514) Firebase: Failed to send data[0m
+[0;31mE (170514) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (170514) esp-tls: Failed to open new connection[0m
+[0;31mE (170524) transport_base: Failed to open a new connection[0m
+[0;31mE (170524) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (170534) Firebase: Failed to send data[0m
+[0;31mE (172534) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (172534) esp-tls: Failed to open new connection[0m
+[0;31mE (172544) transport_base: Failed to open a new connection[0m
+[0;31mE (172544) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (172554) Firebase: Failed to send data[0m
+[0;31mE (174554) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (174554) esp-tls: Failed to open new connection[0m
+[0;31mE (174564) transport_base: Failed to open a new connection[0m
+[0;31mE (174564) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (174574) Firebase: Failed to send data[0m
+[0;31mE (176574) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (176574) esp-tls: Failed to open new connection[0m
+[0;31mE (176584) transport_base: Failed to open a new connection[0m
+[0;31mE (176584) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (176594) Firebase: Failed to send data[0m
+[0;31mE (178594) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (178594) esp-tls: Failed to open new connection[0m
+[0;31mE (178604) transport_base: Failed to open a new connection[0m
+[0;31mE (178604) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (178614) Firebase: Failed to send data[0m
+[0;31mE (180614) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (180614) esp-tls: Failed to open new connection[0m
+[0;31mE (180624) transport_base: Failed to open a new connection[0m
+[0;31mE (180624) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (180634) Firebase: Failed to send data[0m
+[0;31mE (182634) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (182634) esp-tls: Failed to open new connection[0m
+[0;31mE (182644) transport_base: Failed to open a new connection[0m
+[0;31mE (182644) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (182654) Firebase: Failed to send data[0m
+[0;31mE (184654) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (184654) esp-tls: Failed to open new connection[0m
+[0;31mE (184664) transport_base: Failed to open a new connection[0m
+[0;31mE (184664) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (184674) Firebase: Failed to send data[0m
+[0;31mE (186674) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (186674) esp-tls: Failed to open new connection[0m
+[0;31mE (186684) transport_base: Failed to open a new connection[0m
+[0;31mE (186684) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (186694) Firebase: Failed to send data[0m
+[0;31mE (188694) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (188694) esp-tls: Failed to open new connection[0m
+[0;31mE (188704) transport_base: Failed to open a new connection[0m
+[0;31mE (188704) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (188714) Firebase: Failed to send data[0m
+[0;31mE (190714) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (190714) esp-tls: Failed to open new connection[0m
+[0;31mE (190724) transport_base: Failed to open a new connection[0m
+[0;31mE (190724) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (190734) Firebase: Failed to send data[0m
+[0;31mE (192734) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (192734) esp-tls: Failed to open new connection[0m
+[0;31mE (192744) transport_base: Failed to open a new connection[0m
+[0;31mE (192744) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (192754) Firebase: Failed to send data[0m
+[0;31mE (194754) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (194754) esp-tls: Failed to open new connection[0m
+[0;31mE (194764) transport_base: Failed to open a new connection[0m
+[0;31mE (194764) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (194774) Firebase: Failed to send data[0m
+[0;31mE (196774) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (196774) esp-tls: Failed to open new connection[0m
+[0;31mE (196784) transport_base: Failed to open a new connection[0m
+[0;31mE (196784) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (196794) Firebase: Failed to send data[0m
+[0;31mE (198794) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (198794) esp-tls: Failed to open new connection[0m
+[0;31mE (198804) transport_base: Failed to open a new connection[0m
+[0;31mE (198804) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (198814) Firebase: Failed to send data[0m
+[0;31mE (200814) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (200814) esp-tls: Failed to open new connection[0m
+[0;31mE (200824) transport_base: Failed to open a new connection[0m
+[0;31mE (200824) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (200834) Firebase: Failed to send data[0m
+[0;31mE (202834) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (202834) esp-tls: Failed to open new connection[0m
+[0;31mE (202844) transport_base: Failed to open a new connection[0m
+[0;31mE (202844) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (202854) Firebase: Failed to send data[0m
+[0;31mE (204854) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (204854) esp-tls: Failed to open new connection[0m
+[0;31mE (204864) transport_base: Failed to open a new connection[0m
+[0;31mE (204864) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (204874) Firebase: Failed to send data[0m
+[0;31mE (206874) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (206874) esp-tls: Failed to open new connection[0m
+[0;31mE (206884) transport_base: Failed to open a new connection[0m
+[0;31mE (206884) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (206894) Firebase: Failed to send data[0m
+[0;31mE (208894) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (208894) esp-tls: Failed to open new connection[0m
+[0;31mE (208904) transport_base: Failed to open a new connection[0m
+[0;31mE (208904) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (208914) Firebase: Failed to send data[0m
+[0;31mE (210914) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (210914) esp-tls: Failed to open new connection[0m
+[0;31mE (210924) transport_base: Failed to open a new connection[0m
+[0;31mE (210924) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (210934) Firebase: Failed to send data[0m
+[0;31mE (212934) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (212934) esp-tls: Failed to open new connection[0m
+[0;31mE (212944) transport_base: Failed to open a new connection[0m
+[0;31mE (212944) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (212954) Firebase: Failed to send data[0m
+[0;31mE (214954) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (214954) esp-tls: Failed to open new connection[0m
+[0;31mE (214964) transport_base: Failed to open a new connection[0m
+[0;31mE (214964) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (214974) Firebase: Failed to send data[0m
+[0;31mE (216974) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (216974) esp-tls: Failed to open new connection[0m
+[0;31mE (216984) transport_base: Failed to open a new connection[0m
+[0;31mE (216984) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (216994) Firebase: Failed to send data[0m
+[0;31mE (218994) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (218994) esp-tls: Failed to open new connection[0m
+[0;31mE (219004) transport_base: Failed to open a new connection[0m
+[0;31mE (219004) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (219014) Firebase: Failed to send data[0m
+[0;31mE (221014) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (221014) esp-tls: Failed to open new connection[0m
+[0;31mE (221024) transport_base: Failed to open a new connection[0m
+[0;31mE (221024) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (221034) Firebase: Failed to send data[0m
+[0;31mE (223034) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (223034) esp-tls: Failed to open new connection[0m
+[0;31mE (223044) transport_base: Failed to open a new connection[0m
+[0;31mE (223044) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (223054) Firebase: Failed to send data[0m
+[0;31mE (225054) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (225054) esp-tls: Failed to open new connection[0m
+[0;31mE (225064) transport_base: Failed to open a new connection[0m
+[0;31mE (225064) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (225074) Firebase: Failed to send data[0m
+[0;31mE (227074) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (227074) esp-tls: Failed to open new connection[0m
+[0;31mE (227084) transport_base: Failed to open a new connection[0m
+[0;31mE (227084) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (227094) Firebase: Failed to send data[0m
+[0;31mE (229094) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (229094) esp-tls: Failed to open new connection[0m
+[0;31mE (229104) transport_base: Failed to open a new connection[0m
+[0;31mE (229104) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (229114) Firebase: Failed to send data[0m
+[0;31mE (231114) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (231114) esp-tls: Failed to open new connection[0m
+[0;31mE (231124) transport_base: Failed to open a new connection[0m
+[0;31mE (231124) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (231134) Firebase: Failed to send data[0m
+[0;31mE (233134) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (233134) esp-tls: Failed to open new connection[0m
+[0;31mE (233144) transport_base: Failed to open a new connection[0m
+[0;31mE (233144) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (233154) Firebase: Failed to send data[0m
+[0;31mE (235154) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (235154) esp-tls: Failed to open new connection[0m
+[0;31mE (235164) transport_base: Failed to open a new connection[0m
+[0;31mE (235164) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (235174) Firebase: Failed to send data[0m
+[0;31mE (237174) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (237174) esp-tls: Failed to open new connection[0m
+[0;31mE (237184) transport_base: Failed to open a new connection[0m
+[0;31mE (237184) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (237194) Firebase: Failed to send data[0m
+[0;31mE (239194) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (239194) esp-tls: Failed to open new connection[0m
+[0;31mE (239204) transport_base: Failed to open a new connection[0m
+[0;31mE (239204) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (239214) Firebase: Failed to send data[0m
+[0;31mE (241214) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (241214) esp-tls: Failed to open new connection[0m
+[0;31mE (241224) transport_base: Failed to open a new connection[0m
+[0;31mE (241224) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (241234) Firebase: Failed to send data[0m
+[0;31mE (243234) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (243234) esp-tls: Failed to open new connection[0m
+[0;31mE (243244) transport_base: Failed to open a new connection[0m
+[0;31mE (243244) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (243254) Firebase: Failed to send data[0m
+[0;31mE (245254) esp-tls: couldn't get hostname for :fir-4bc07-default-rtdb.asia-southeast1.firebasedatabase.app: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (245254) esp-tls: Failed to open new connection[0m
+[0;31mE (245264) transport_base: Failed to open a new connection[0m
+[0;31mE (245264) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (245274) Firebase: Failed to send data[0m
